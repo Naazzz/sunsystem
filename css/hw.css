@@ -1,0 +1,105 @@
+body {
+    background-image: url(http://www.blirk.net/wallpapers/1920x1080/space-wallpaper-14.jpg);
+}
+
+.sun {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 2px solid black;
+    border: black;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    background-color: darkgoldenrod;
+    opacity: 0.5;
+}
+
+.hidden {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: black;
+    background-color: transparent;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 7s linear infinite;
+}
+
+.hidden:before {
+    content: '';
+    position: relative;
+    animation: rotate 7s linear reverse infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/*
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(3600deg) translateX(150px) rotate(-3600deg); }
+}
+*/
+
+.circle1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: 2px solid black;
+    position: relative;
+    top: -120px;
+    left: -132px;
+    background-color: lightgreen;
+}
+
+.hidden1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    position: relative;
+    border: black;
+    background-color: transparent;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 7s linear infinite;
+}
+
+.hidden:before {
+    content: '';
+    position: relative;
+    animation: rotate 7s linear reverse infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/*
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(3600deg) translateX(150px) rotate(-3600deg); }
+}
+*/
+
+.circle2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    background-color: lightsalmon;
+    border: 2px solid black;
+}
